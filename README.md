@@ -3,12 +3,6 @@
 https://docs.github.com/en/rest/pulls/pulls#list-pull-requests
 # PowerShell Integrated Console v2022.5.1
 
-# Things to Download:
-================================ 
-    1. Azure powershell commandlets Az.Accounts to log into and interface with azure key vault https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-8.0.0
-    2. Install git https://git-scm.com/download/win
-    3. Install vs code of some IDE of your choice https://code.visualstudio.com/Download
-
 # Assumptions: 
 =======================
 In order to use the Github APIs you need to authenticate via an Oauth token. it is best practice to store this token in a secure location that 
@@ -17,6 +11,11 @@ can be called to via the script instead of hard coding it or copy and pasting it
         #NOTE: in this example i am using an Azure Key Vault as my secure method of storing access tokens as a secret. You can use many others tools including Google cloud secret manager , AWS key mangament services etc. 
 #------- IAM roles are used on Key Vaults . Personal/ or Service principal account Access to the Azure Key Vault is necessary to be able to store and grab keys from the vault in this script. 
 
+# Things to Download:
+================================ 
+    1. Azure powershell commandlets Az.Accounts to log into and interface with azure key vault https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-8.0.0
+    2. Install git https://git-scm.com/download/win
+    3. Install vs code of some IDE of your choice https://code.visualstudio.com/Download
 
 # Pre work before running code:
 ==================================
@@ -75,5 +74,6 @@ curl \
   #adding a change
   #add another change
   #adding another change at 9:54 pm 6/1/2022
+  #adding a comment on 6/2/2022
 
   
