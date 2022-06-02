@@ -67,12 +67,13 @@ curl \
 
 # Run Instructions: 
 ======================
-    1. Add a comment here 
+    1. Add a comment here and click file save
     2. Stage the change
     3. commit the change and add a commit comment
     4. sync the changes to the remote and now you are ready to run the GithubApiScript Powershell script to create a pull request for your change!
 
   #adding a change
   #add another change
+  #adding another change at 9:54 pm 6/1/2022
 
   
