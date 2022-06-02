@@ -14,6 +14,7 @@
         Set-AzContext -Subscription "722e159e-d660-45af-ba96-8be2d0c7ff04"
 
 #Step 4: Get the Access Token Secret called "GitHubToken" from the Vault called "TestDevOpsVaultAbby" and store it as a variable called $secret
+#--------- how to fix execution policy if this fails https://stackoverflow.com/questions/64633727/how-to-fix-running-scripts-is-disabled-on-this-system
     $secret = Get-AzKeyVaultSecret -VaultName "TestDevOpsVaultAbby" -Name "GitHubToken" -AsPlainText
     #---- in powershell syntax the Authorization Header is "Bearer TOKEN_VALUE" .so this next line is adding "Bearer " to the begining of the $secret string value and stored as a variable.
             $BearerToken= "Bearer " + $secret
