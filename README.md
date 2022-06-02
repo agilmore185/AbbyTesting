@@ -10,12 +10,13 @@ can be called to via the script instead of hard coding it or copy and pasting it
     1.  git hub.com and log in to your account > settings> developer settings> personal access tokens  https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
         #NOTE: in this example i am using an Azure Key Vault as my secure method of storing access tokens as a secret. You can use many others tools including Google cloud secret manager , AWS key mangament services etc. 
 #------- IAM roles are used on Key Vaults . Personal/ or Service principal account Access to the Azure Key Vault is necessary to be able to store and grab keys from the vault in this script. 
+    2. Another assumption is that you already have a Git hub account and that you have created a repositiory inside of it.  https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account
 
 # Things to Download:
 ================================ 
-    1. Azure powershell commandlets Az.Accounts to log into and interface with azure key vault https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-8.0.0
+    1. Azure powershell module Az.Accounts to log into and interface with azure key vault https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-8.0.0
     2. Install git https://git-scm.com/download/win
-    3. Install vs code of some IDE of your choice https://code.visualstudio.com/Download
+    3. Install vs code or some IDE of your choice https://code.visualstudio.com/Download
 
 # Pre work before running code:
 ==================================
@@ -26,6 +27,7 @@ CLONE REPO TO YOUR LOCAL PC AND CREATE A FEATURE BRANCH:------------------------
     3. Now open VS code on your pc and click file open folder and open the newly created folder with your code
     4. In VS code create a new branch by clicking the branch button on the bottom left screen and in the pop up menu click create new branch
     5. Name this Feature branch... i have created a Feature branch already called Abby-Feature-Test
+    6. Sync changes to the remote with newly added feature branch
 
 CREATE A PERSONAL ACCESS TOKEN IN GIT HUB TO BE ABLE TO USE THE GIT HUB APIS:---------------------------------
     1.  git hub > settings> developer settings> personal access tokens  https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
@@ -75,5 +77,6 @@ curl \
   #add another change
   #adding another change at 9:54 pm 6/1/2022
   #adding a comment on 6/2/2022
+  testing change
 
   
